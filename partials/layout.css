@@ -1,0 +1,157 @@
+@charset "UTF-8";
+.first-section {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(../assets/fundo.3.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-section .conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-section h1 {
+  color: #cab0e5;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.first-section h2 {
+  color: #9186c6;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.btn button {
+  width: 230px;
+  height: 60px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #9186c6;
+  color: #ffe9f4;
+  font-weight: 900;
+  margin-top: 2rem;
+  transition: all 250ms ease-in;
+  border-radius: 50px;
+  font-size: 1.5rem;
+}
+
+.btn button:hover {
+  border: 1px solid #9186c6;
+  background-color: #b4b1d6;
+  color: #9186c6;
+  animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.09);
+  }
+}
+/* ----------------- fim da sessão */
+.sobre-nos {
+  background-color: #b4b1d6;
+  width: 100%;
+  padding-bottom: 3rem;
+  color: #FDF3F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  flex: 1;
+}
+
+.sobre-nos img {
+  width: 600px;
+  height: 350px;
+  margin-top: 32rem;
+  margin-left: 15rem;
+  filter: brightness(85%);
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentsobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentsobre h2 {
+  font-size: 7rem;
+  margin-bottom: 3rem;
+  margin-top: 8rem;
+}
+
+.contentsobre p {
+  text-align: center;
+  font-size: 2rem;
+  width: 600px;
+  padding: 1rem;
+}
+
+.primeiro-bloco {
+  border: solid 5px #6d446a;
+  border-radius: 50px;
+  padding: 1rem;
+}
+
+.segundo-bloco {
+  border: solid 5px #6d446a;
+  border-radius: 50px;
+  padding: 1rem;
+}
+
+.terceiro-bloco {
+  border: solid 5px #6d446a;
+  border-radius: 50px;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    display: block;
+  }
+  .sobre-nos img {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 500px;
+    height: 280px;
+    margin-left: 6rem;
+  }
+  .contentsobre h2 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 980px) {
+  html {
+    font-size: 50%;
+  }
+  .first-section {
+    background-position-y: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 43%;
+  }
+}/*# sourceMappingURL=layout.css.map */
